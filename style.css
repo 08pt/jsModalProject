@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family:  'Noto Sans Mono', monospace;
+   
+
+}
+body{
+    font-family: 'Noto Sans Mono', monospace;
+}
+img{
+    width:100%;
+    height: auto;
+    -o-object-fit: contain;
+    object-fit: contain;
+}
+a{
+    text-decoration: none;
+}li{
+    list-style: none;
+}
+.btn-container{
+    text-align: center;
+}
+
+.btn{
+    padding: 0.8rem 1.2rem;
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.2s ease-in;
+}
+.btn:hover{
+    cursor: pointer;
+    transform: translateY(-2px);
+}
+.btn-orange{
+    background-color:  rgba(144, 21, 216, 0.479);
+    border: 2px solid rgb(226, 102, 102);
+    color:  #fff;
+
+}
+.modal-body h1{
+    text-align: center;
+    margin: 1rem auto;
+    
+    }
+    .modal-body p{
+        font-size: 1.1rem;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 1.4rem;
+    }
+    .modal-card{
+        padding: 1rem;
+        border-radius: 8px;
+        border: 2px solid #c20421;
+        width:75%;
+        max-width: 30rem;
+        display:block;
+        margin:1rem auto;
+        transform: translateY(-1000px);
+        transition: all 0.5s ease-in;
+        background-color: #fff;
+        position: relative;
+        transform: translateY(-1000px);
+        transition: all 0.5s ease-in;
+        z-index: 1001;
+    }
+    .modal-body h1{
+        text-align: center;
+        margin: 1rem auto;
+            }
+            .modal-body p{
+    
+            }
+    .modal-header{
+        margin-bottom: 1rem;
+        
+        }
+        .modal-card.show{
+            transform: translateY(0);
+        }
+        .btn-close{
+            position: relative;
+            right: 10px;
+            top: 10px;
+            z-index: 1002;
+        }
+        .btn-close button{
+            padding: 1rem;
+            font-size: 1rem;
+            width: 1rem;
+            height: 1rem;
+            font-weight: 900;
+            border-radius: 50%;
+            outline: none;
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(255,120,100);
+            color: #fff;
+            cursor: pointer;
+        }
+        .overlay{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgb(200,100,123);
+            background: linear-gradient(
+                90deg,
+                rgba(255,-125,-125,-0.85) 0%,
+                rgba(255,-125,-125,-0.85) 50%,
+                rgba(255,-125,-125,-0.85) 100%
+            );
+            z-index: 1000;
+            visibility: hidden;
+            transition: all 0.5s ease-in;
+        }
+        .overlay.show{
+            visibility: visible;
+        }
+       
